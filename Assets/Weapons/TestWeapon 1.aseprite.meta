@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ebc0a7fe30b4ea744874dded8a0f661e
+guid: 871f919826851814c804dd8b547e01b9
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638581328437489183
+  platformSettingsDirtyTick: 638581382911498575
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: TestWeapon
+  - name: TestWeapon 1_Frame_0
     originalName: 
     pivot: {x: 1, y: 0.42105263}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 30
       height: 19
-    spriteID: cb329da1b193a5b49a673b63d40f1e8c
+    spriteID: 3971e580676bf894495547f191e36fd4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,23 +139,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: TestWeapon 1_Frame_1
+    originalName: 
+    pivot: {x: 1.2222222, y: 0.53333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 18
+      height: 30
+    spriteID: d5251ea32b7e6c6458a7eae3d53da608
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1833456782
-    name: TestWeapon
+    guid: 788516605
+    name: TestWeapon 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: TestWeapon
+    - name: TestWeapon 1_Frame_0
       frameIndex: 0
       cellRect:
         x: 2
         y: 8
         width: 30
         height: 20
-      spriteId: cb329da1b193a5b49a673b63d40f1e8c
+      spriteId: 3971e580676bf894495547f191e36fd4
+    - name: TestWeapon 1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 9
+        y: 0
+        width: 20
+        height: 30
+      spriteId: d5251ea32b7e6c6458a7eae3d53da608
     linkedCells: []
     parentIndex: -1
   platformSettings:

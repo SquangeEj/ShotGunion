@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df6dc1b6f0c15024598363aadabef1fa
+guid: 6682d7f68fa82ca42a9652ad69b4ecfc
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +87,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638580659688600293
+  platformSettingsDirtyTick: 638581378206457546
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: TestBody
+  - name: DefaultHat
     originalName: 
-    pivot: {x: 0.5, y: 0.64}
+    pivot: {x: 0.5, y: -0.8571429}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 22
-      height: 25
-    spriteID: 507dc186b5524db44ba2265a797c3f41
+      width: 10
+      height: 7
+    spriteID: efe2db6d05c39564f8b4c2fa119525ea
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1710446518
-    name: TestBody
+    guid: 1320761708
+    name: DefaultHat
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: TestBody
+    - name: DefaultHat
       frameIndex: 0
       cellRect:
-        x: 5
-        y: 0
-        width: 22
-        height: 25
-      spriteId: 507dc186b5524db44ba2265a797c3f41
+        x: 11
+        y: 6
+        width: 10
+        height: 7
+      spriteId: efe2db6d05c39564f8b4c2fa119525ea
     linkedCells: []
     parentIndex: -1
   platformSettings:

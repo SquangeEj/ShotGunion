@@ -1586,6 +1586,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestHat
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 9287f247880a6a844ba620574816688e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 9287f247880a6a844ba620574816688e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3446847427157995583, guid: 00cbbaca77881f541b849c43b8632dbf, type: 3}
     - target: {fileID: 3626916397498700004, guid: 9287f247880a6a844ba620574816688e, type: 3}
       propertyPath: m_SortingOrder
       value: 10001
@@ -1596,7 +1604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 9287f247880a6a844ba620574816688e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 9287f247880a6a844ba620574816688e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1903,6 +1911,7 @@ GameObject:
   - component: {fileID: 7878350318217503240}
   - component: {fileID: 3626916396790435297}
   - component: {fileID: 7878350318217503241}
+  - component: {fileID: 7878350318217503242}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -1937,6 +1946,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560d9f93abcfd9a41a20e9e90314f351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Weapons:
+  - {fileID: 11400000, guid: 6421c187321c90b4d86f99bbfdb819d5, type: 2}
+  - {fileID: 11400000, guid: a2e20a5d3c6f29f4ba135487b0134845, type: 2}
+--- !u!95 &7878350318217503242
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969460405252328045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d4e75998108e60f45b0a6563f8305a98, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &7878350318468241240
 Transform:
   m_ObjectHideFlags: 0

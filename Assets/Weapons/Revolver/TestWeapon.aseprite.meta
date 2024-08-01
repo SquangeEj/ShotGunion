@@ -1,8 +1,13 @@
 fileFormatVersion: 2
-guid: df6dc1b6f0c15024598363aadabef1fa
+guid: ebc0a7fe30b4ea744874dded8a0f661e
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TestWeapon_Clip
+    second: {fileID: 7400000, guid: 36c7f0077913d234ba8dc6d6a47d7b08, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -75,7 +80,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 5
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +92,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 5
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638580659688600293
+  platformSettingsDirtyTick: 638581398016473222
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +124,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: TestBody
+  - name: TestWeapon
     originalName: 
-    pivot: {x: 0.5, y: 0.64}
+    pivot: {x: 1, y: 0.42105263}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 22
-      height: 25
-    spriteID: 507dc186b5524db44ba2265a797c3f41
+      width: 30
+      height: 19
+    spriteID: cb329da1b193a5b49a673b63d40f1e8c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,23 +144,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: TestWeapon_Frame_1
+    originalName: 
+    pivot: {x: 1.2222222, y: 0.53333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 18
+      height: 30
+    spriteID: 561aa875feb003b44b5dd0755d1277e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1710446518
-    name: TestBody
+    guid: 1833456782
+    name: TestWeapon
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: TestBody
+    - name: TestWeapon_Frame_0
       frameIndex: 0
       cellRect:
-        x: 5
+        x: 2
+        y: 8
+        width: 30
+        height: 20
+      spriteId: cb329da1b193a5b49a673b63d40f1e8c
+    - name: TestWeapon_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 9
         y: 0
-        width: 22
-        height: 25
-      spriteId: 507dc186b5524db44ba2265a797c3f41
+        width: 20
+        height: 30
+      spriteId: 561aa875feb003b44b5dd0755d1277e4
     linkedCells: []
     parentIndex: -1
   platformSettings:
