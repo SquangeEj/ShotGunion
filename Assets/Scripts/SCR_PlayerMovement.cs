@@ -11,6 +11,8 @@ public class SCR_PlayerMovement : MonoBehaviour
     float horizontal, vertical;
     [SerializeField] private float runSpeed { get; set; }
     [SerializeField] Animator anim;
+    [SerializeField] GameObject RollTrail, RollParticles, RollDash;
+    private bool Rolling;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,37 +25,57 @@ public class SCR_PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            Rolling = true;
             body.drag = 0;
-            anim.Play("Roll");
-            Roll();
+
+            anim.Play("ToRoll");
+            anim.SetBool("Roll", true);
+            RollTrail.SetActive(true);
+
+        
+
         }
-        else 
+        if (Input.GetKeyUp(KeyCode.Space))
         {
-            Walk();
-            body.drag = 3;
-            anim.Play("Idle");
 
+            anim.Play("FromRoll");
+            anim.SetBool("Roll", false);
+            Rolling = false;
+            RollTrail.SetActive(false);
+         
+            GameObject part = Instantiate(RollParticles, transform.position, Quaternion.identity);
+            Destroy(part, 2);
+                body.drag = 3;
+        
         }
+
+      
+       
         horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+            vertical = Input.GetAxisRaw("Vertical");
 
 
-
+ 
     }
 
+   
 
 
-    private void Walk()
+    private void LateUpdate()
     {
         body.velocity += (new Vector2(horizontal, vertical) * runSpeed) * Time.deltaTime;
 
-    }
-
-    private void Roll()
-    {
-        body.velocity += (new Vector2(horizontal, vertical) * runSpeed) * Time.deltaTime;
+       
+      if(body.velocity.magnitude > 10 && Rolling == true)
+        {
+            RollDash.SetActive(true);
+        }
+        else
+        {
+            RollDash.SetActive(false);
+        }
 
     }
 }

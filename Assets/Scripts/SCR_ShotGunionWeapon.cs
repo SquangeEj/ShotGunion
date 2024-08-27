@@ -11,6 +11,9 @@ public class SCR_ShotGunionWeapon : MonoBehaviour
     private Animator anim;
 
     private int CurrentWeapon;
+    
+    [SerializeField] private GameObject MouseAim;
+    
 
     void Start()
     {
@@ -22,10 +25,16 @@ public class SCR_ShotGunionWeapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        MouseAim.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition + new Vector3(0,0,10));
+        if (Input.GetMouseButton(0))
         {
-            anim.Play("Fire");
+            anim.SetBool("Firing", true);
+
             
+        }
+        else
+        {
+            anim.SetBool("Firing", false);
         }
         if (Input.GetKeyDown(KeyCode.Q)) {
 
@@ -40,7 +49,9 @@ public class SCR_ShotGunionWeapon : MonoBehaviour
 
     private void ShootSingle()
     {
-        GameObject bullet = Instantiate(Weapons[0].bullet, transform.position, Quaternion.identity);
+        GameObject bullet = Instantiate(Weapons[CurrentWeapon].bullet, transform.position + -this.transform.right * Weapons[CurrentWeapon].Offset, transform.rotation);
+        bullet.GetComponent<Rigidbody2D>().AddForce((-bullet.transform.right * 20)  , ForceMode2D.Impulse);
+        bullet.GetComponent<Rigidbody2D>().AddForce(GetComponentInParent<Rigidbody2D>().velocity, ForceMode2D.Impulse);
 
         Destroy(bullet, 2f);
     }

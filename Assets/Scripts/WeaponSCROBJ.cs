@@ -10,5 +10,7 @@ public class WeaponSCROBJ : ScriptableObject
 
     public AnimatorController controller;
 
+    public float Offset;
+
     public GameObject bullet;
 }

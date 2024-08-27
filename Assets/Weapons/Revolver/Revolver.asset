@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   controller: {fileID: 9100000, guid: b77ff9b88ef287d429b30dc35ae4467a, type: 2}
+  Offset: 1
   bullet: {fileID: 7316564848844883884, guid: 11b78aef9fcaa204a9471327549e5673, type: 3}

@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 9522e780de55e4f43bb8629439cd9f0b
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: BULLET_Clip
+    second: {fileID: 7400000, guid: f1854cf483d5f6641900383882713df6, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638581331649264583
+  platformSettingsDirtyTick: 638587440700143060
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,15 +126,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: BULLET
     originalName: 
-    pivot: {x: 0.45833334, y: 0.5}
+    pivot: {x: 0.6, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 24
-      height: 26
+      y: 19
+      width: 5
+      height: 4
     spriteID: 16fbea9ff51b7b6488a3e48eeeb8ad2b
     spriteBone: []
     spriteOutline: []
@@ -138,7 +143,47 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2, y: 3}
+    uvTransform: {x: -9, y: 7}
+  - name: BULLET_Frame_1
+    originalName: 
+    pivot: {x: 0.6, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 4
+      width: 5
+      height: 5
+    spriteID: bd20265c6bb97d94690c7db3fab8aed5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7, y: -8}
+  - name: BULLET_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.42857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 8
+      height: 7
+    spriteID: 8eb70a2ec2b0edf4daa14f99f77952b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -8, y: -7}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -148,14 +193,30 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: BULLET
+    - name: BULLET_Frame_0
       frameIndex: 0
       cellRect:
-        x: 3
+        x: 0
         y: 2
-        width: 28
+        width: 32
         height: 28
       spriteId: 16fbea9ff51b7b6488a3e48eeeb8ad2b
+    - name: BULLET_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 2
+        width: 32
+        height: 28
+      spriteId: bd20265c6bb97d94690c7db3fab8aed5
+    - name: BULLET_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 2
+        width: 32
+        height: 28
+      spriteId: 8eb70a2ec2b0edf4daa14f99f77952b2
     linkedCells: []
     parentIndex: -1
   platformSettings:

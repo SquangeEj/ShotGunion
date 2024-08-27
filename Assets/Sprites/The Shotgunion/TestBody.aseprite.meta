@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 128
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638580659688600293
+  platformSettingsDirtyTick: 638597069281454817
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,16 +121,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: TestBody
     originalName: 
-    pivot: {x: 0.5, y: 0.64}
+    pivot: {x: 0.5, y: 0.6144578}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 22
-      height: 25
-    spriteID: 507dc186b5524db44ba2265a797c3f41
+      width: 72
+      height: 83
+    spriteID: c1d0e4227d96aa34981aa980d14291ee
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,11 +151,11 @@ ScriptedImporter:
     - name: TestBody
       frameIndex: 0
       cellRect:
-        x: 5
-        y: 0
-        width: 22
-        height: 25
-      spriteId: 507dc186b5524db44ba2265a797c3f41
+        x: 28
+        y: 13
+        width: 72
+        height: 83
+      spriteId: c1d0e4227d96aa34981aa980d14291ee
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -197,4 +197,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 128, y: 128}

@@ -7,7 +7,7 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: TestWeapon_Clip
-    second: {fileID: 7400000, guid: 36c7f0077913d234ba8dc6d6a47d7b08, type: 2}
+    second: {fileID: 7400000, guid: 655dc45c50bc8ec4ab6973605c18647a, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -40,7 +40,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 128
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -100,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638581398016473222
+  platformSettingsDirtyTick: 638597074570474190
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -126,15 +126,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: TestWeapon
     originalName: 
-    pivot: {x: 1, y: 0.42105263}
+    pivot: {x: 1, y: 0.48780486}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 30
-      height: 19
+      y: 89
+      width: 52
+      height: 41
     spriteID: cb329da1b193a5b49a673b63d40f1e8c
     spriteBone: []
     spriteOutline: []
@@ -143,19 +143,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: -48, y: 86}
   - name: TestWeapon_Frame_1
     originalName: 
-    pivot: {x: 1.2222222, y: 0.53333336}
+    pivot: {x: 0.9826087, y: 0.45454547}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
+      x: 4
       y: 4
-      width: 18
-      height: 30
-    spriteID: 561aa875feb003b44b5dd0755d1277e4
+      width: 115
+      height: 77
+    spriteID: 8c8786b1cf925b748ad518e5a4f8a384
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,7 +163,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 41, y: 4}
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -176,19 +176,19 @@ ScriptedImporter:
     - name: TestWeapon_Frame_0
       frameIndex: 0
       cellRect:
-        x: 2
-        y: 8
-        width: 30
-        height: 20
+        x: 24
+        y: 41
+        width: 116
+        height: 44
       spriteId: cb329da1b193a5b49a673b63d40f1e8c
     - name: TestWeapon_Frame_1
       frameIndex: 1
       cellRect:
-        x: 9
-        y: 0
-        width: 20
-        height: 30
-      spriteId: 561aa875feb003b44b5dd0755d1277e4
+        x: 15
+        y: 29
+        width: 125
+        height: 77
+      spriteId: 8c8786b1cf925b748ad518e5a4f8a384
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -230,4 +230,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 128, y: 128}
